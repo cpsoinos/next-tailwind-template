@@ -1,3 +1,37 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["import", "unused-imports"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import-x/recommended",
+    "plugin:import-x/typescript",
+    "prettier",
+    "plugin:oxlint/recommended"
+  ],
+  "settings": {
+    "import-x/resolver": {
+      "typescript": true,
+      "node": true
+    }
+  },
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+    "import-x/order": [
+      "warn",
+      {
+        "alphabetize": { "order": "asc" },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ]
+      }
+    ],
+    "import-x/newline-after-import": "error",
+    "import-x/no-useless-path-segments": "error"
+  }
 }
