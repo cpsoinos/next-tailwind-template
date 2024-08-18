@@ -3,5 +3,22 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "prettier.configPath": ".prettierrc.mjs"
+  "prettier.configPath": ".prettierrc.mjs",
+  "oxc_language_server.configPath": ".eslintrc.json",
+  "eslint.codeActionsOnSave.rules": null,
+  "eslint.probe": [
+    "astro",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "mdx",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc",
+    "svelte"
+  ],
+  "eslint.validate": ["javascript", "javascriptreact", "svelte"]
 }
