@@ -1,5 +1,5 @@
 {
-  "plugins": ["import", "unused-imports"],
+  "plugins": ["unused-imports"],
   "extends": [
     "next/core-web-vitals",
     "plugin:import-x/recommended",
